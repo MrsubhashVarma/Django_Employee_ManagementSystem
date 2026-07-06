@@ -1,5 +1,5 @@
 """
-URL configuration for Employee_Management project.
+URL configuration for College project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('employee/', include('Employee.urls')),
+    path('student/', include('Student.urls')),
+    path('faculty/', include('Faculty.urls')),
 ]
